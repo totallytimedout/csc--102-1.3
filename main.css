@@ -1,0 +1,121 @@
+
+body{
+    background-color: #f0f0f0;
+    color: #333;
+}   
+
+nav{
+    height: 6000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+#memeImage{
+    margin-right: 200px;
+}
+
+header{
+    text-align: center;
+}
+
+      :root {
+        --primary: rgb(116, 51, 109);
+        --secondary: rgb(46, 8, 42);
+        --tertiary: rgba(20, 20, 42, 0.644);
+      }
+
+      body {
+        background-color: var(--secondary);
+        margin: none;
+        padding: 5%;
+        bottom: 0%;
+        top: 10%;
+        width: 80%;
+        position: absolute;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-align: center;
+        background-color: var(--tertiary);
+        color: var(--tertiary);
+        text-shadow: 1px 1px black;
+      }
+
+      #memewrapper {
+        position: absolute;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-basis: auto;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        text-justify: inter-word;
+      }
+
+      p {
+        text-indent: -1ch;
+        cursor: none;
+      }
+
+      #memeImage {
+        padding: 2px;
+        margin-top: 2px;
+        width: 64px;
+        height: auto;
+        border: 25px solid var(--tertiary);
+        transition-property: all;
+        transition-duration: 0.5s;
+      }
+
+      #memeImage:hover {
+        transform: scale(1.1);
+        cursor: zoom-in;
+      }
+
+      #memeImage.zoomed {
+        width: 600px;
+        height: auto;
+        cursor: zoom-out;
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+      }
+
+      #memeImage.zoomed:hover {
+        transform: scale(0.9);
+        cursor: zoom-out;
+      }
+
+      /*the magic button*/
+      button#toggleMeme {
+        max-width: 25vw;
+        /*vw = viewport width*/
+        min-width: fit-content;
+        /* the buttons label should always be visible with this*/
+        background-color: var(--secondary);
+        border: 2px double var(--primary);
+      }
+
+      /*makes the button change size by transformation of the scale when hovered*/
+      button:hover {
+        transform: scale(1.1);
+        border-color: yellow;
+        outline: green;
+      }
